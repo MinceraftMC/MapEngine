@@ -113,6 +113,10 @@ public class ColorPalette implements IMapColors {
 
     @SuppressWarnings("deprecation")
     private void generateColors() {
+        // the initialization of bukkit's built-in color cache isn't thread-safe,
+        // so force-initialize the cache once synchronously to prevent errors
+        MapPalette.matchColor(0, 0, 0);
+
         Bukkit.getScheduler().runTaskAsynchronously(this.plugin, () -> {
             this.plugin.getLogger().info("Generating palette...");
 
