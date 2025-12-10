@@ -18,17 +18,18 @@ public final class Paper12111Provider implements IPlatformProvider {
     @SuppressWarnings("deprecation") // bukkit unsafe
     @Override
     public Optional<IPlatform<?>> tryProvide(Plugin plugin, IListenerBridge bridge) {
+        // check we're actually mojang-mapped
         if (IPlatformProvider.existsClass("org.bukkit.craftbukkit.CraftServer")
                 && SUPPORTED_PROTOCOLS.contains(Bukkit.getUnsafe().getProtocolVersion())) {
-            return Optional.of(Paper1216StaticProvider.provide(plugin, bridge));
+            return Optional.of(Paper12111StaticProvider.provide(plugin, bridge));
         }
         return Optional.empty();
     }
 }
 
-final class Paper1216StaticProvider {
+final class Paper12111StaticProvider {
 
-    private Paper1216StaticProvider() {
+    private Paper12111StaticProvider() {
     }
 
     static IPlatform<?> provide(Plugin plugin, IListenerBridge bridge) {
