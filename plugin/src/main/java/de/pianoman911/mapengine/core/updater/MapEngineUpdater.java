@@ -38,7 +38,7 @@ public final class MapEngineUpdater implements Listener {
             .append(Component.text("MapEngine", NamedTextColor.GOLD))
             .append(Component.text(']', NamedTextColor.GRAY))
             .appendSpace().build();
-    private static final String GITHUB_REPO = "TheJoCraftNET/MapEngine";
+    private static final String GITHUB_REPO = "MinceraftMC/MapEngine";
 
     private final Set<UUID> notifiedPlayers = new HashSet<>();
     private final Plugin plugin;

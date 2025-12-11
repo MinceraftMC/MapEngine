@@ -13,7 +13,7 @@ allprojects {
     apply(plugin = "maven-publish")
 
     group = "de.pianoman911"
-    version = "1.8.10"
+    version = "1.8.11"
 
     repositories {
         maven("https://repo.minceraft.dev/public/")
@@ -31,6 +31,7 @@ allprojects {
 
     java {
         withSourcesJar()
+        withJavadocJar()
         toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 
         sourceCompatibility = JavaVersion.VERSION_17

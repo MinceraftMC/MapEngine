@@ -2,7 +2,7 @@
 
 <img src="https://imgur.com/x3tR7jb.png" alt="logo" width="200">
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/TheJoCraftNET/MapEngine?style=flat-square)](#)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/MinceraftMC/MapEngine?style=flat-square)](#)
 [![AGPLv3 License](https://img.shields.io/badge/License-AGPL%20v3-yellow.svg?style=flat-square)](https://opensource.org/license/agpl-v3/)
 [![Status Beta](https://img.shields.io/badge/Status-Beta-orange?style=flat-square)](#)
 
@@ -55,6 +55,8 @@ A hosted version of the javadoc can be found [here](https://mapengine.finndohrma
 
 | Server Version | Supported |
 |----------------|-----------|
+| Paper 1.21.11  | ✔️        |
+| Paper 1.21.10  | ✔️        |
 | Paper 1.21.9   | ✔️        |
 | Paper 1.21.8   | ✔️        |
 | Paper 1.21.7   | ✔️        |
@@ -92,7 +94,7 @@ A hosted version of the javadoc can be found [here](https://mapengine.finndohrma
     <dependency>
         <groupId>de.pianoman911</groupId>
         <artifactId>mapengine-api</artifactId>
-        <version>1.8.10</version>
+        <version>1.8.11</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
@@ -113,7 +115,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'de.pianoman911:mapengine-api:1.8.10'
+    compileOnly 'de.pianoman911:mapengine-api:1.8.11'
 }
 ```
 
@@ -130,7 +132,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("de.pianoman911:mapengine-api:1.8.10")
+    compileOnly("de.pianoman911:mapengine-api:1.8.11")
 }
 ```
 
@@ -177,11 +179,11 @@ public class Bar {
 ```
 
 More detailed examples can be found in
-the [TheJoCraftNET/MapEngineExamples](https://github.com/TheJoCraftNET/MapEngineExamples) repository.
+the [MinceraftMC/MapEngineExamples](https://github.com/MinceraftMC/MapEngineExamples) repository.
 
 ## Building
 
-1. Clone the project (`git clone https://github.com/TheJoCraftNET/MapEngine.git`)
+1. Clone the project (`git clone https://github.com/MinceraftMC/MapEngine.git`)
 2. Go to the cloned directory (`cd MapEngine`)
 3. Build the Jar (`./gradlew build` on Linux/MacOS, `gradlew build` on Windows)
 
