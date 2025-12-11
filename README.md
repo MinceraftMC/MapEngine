@@ -49,7 +49,7 @@ The Stream source is 1920x1080@20 streamed with OBS.
 
 ### Javadoc
 
-A hosted version of the javadoc can be found [here](https://mapengine.finndohrmann.de/javadoc/).
+A hosted version of the javadoc can be found [here](https://repo.minceraft.dev/javadoc/releases/de/pianoman911/mapengine-api/1.8.11).
 
 ### Support
 
