@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Unmodifiable;
  * The main purpose of this is to provide the vanilla map ids per z level.
  * <p>
  * <b>Note: Maps only exist on the network level,
- * so the server doesn't know about this map id and content.
+ * so the server doesn't know about this map id and content.</b>
  *
  * @see IMapDisplay#mapId(Player, int) for more info about z levels
  */
