@@ -218,7 +218,7 @@ public class Paper1205Platform implements IPlatform<Packet<ClientGamePacketListe
     public PacketContainer<?> createItemRotationPacket(int entityId, int rotation) {
         SynchedEntityData entityData = ITEM_FRAME_DATA.build();
 
-        entityData.set(ItemFrame.DATA_ROTATION, rotation); // item rotation (0-7)
+        entityData.set(ItemFrame.DATA_ROTATION, rotation, true); // item rotation (0-7)
 
         return PacketContainer.wrap(this, new ClientboundSetEntityDataPacket(entityId, Objects.requireNonNull(entityData.packDirty())));
     }

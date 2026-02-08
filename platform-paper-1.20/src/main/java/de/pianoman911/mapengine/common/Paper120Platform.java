@@ -200,7 +200,7 @@ public class Paper120Platform implements IPlatform<Packet<ClientGamePacketListen
         SynchedEntityData entityData = new SynchedEntityData(FAKED_ENTITY);
 
         entityData.define(ItemFrame.DATA_ROTATION, 0); // default
-        entityData.set(ItemFrame.DATA_ROTATION, rotation); // item rotation (0-7)
+        entityData.set(ItemFrame.DATA_ROTATION, rotation, true); // item rotation (0-7)
 
         return PacketContainer.wrap(this, new ClientboundSetEntityDataPacket(entityId, Objects.requireNonNull(entityData.packDirty())));
     }

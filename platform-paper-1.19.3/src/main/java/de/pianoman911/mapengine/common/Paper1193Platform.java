@@ -190,6 +190,7 @@ public class Paper1193Platform implements IPlatform<Packet<ClientGamePacketListe
 
         entityData.define(ItemFrame.DATA_ROTATION, 0); // default
         entityData.set(ItemFrame.DATA_ROTATION, rotation); // item rotation (0-7)
+        entityData.markDirty(ItemFrame.DATA_ROTATION);
 
         return PacketContainer.wrap(this, new ClientboundSetEntityDataPacket(entityId, Objects.requireNonNull(entityData.packDirty())));
     }
