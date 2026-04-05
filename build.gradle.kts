@@ -2,8 +2,8 @@ plugins {
     id("java-library")
     id("maven-publish")
 
-    id("io.papermc.paperweight.userdev") version "2.0.0-beta.17" apply false
-    id("com.gradleup.shadow") version "8.3.6"
+    id("io.papermc.paperweight.userdev") version "2.0.0-beta.21" apply false
+    id("com.gradleup.shadow") version "9.4.1"
 }
 
 tasks["jar"].enabled = false
@@ -31,7 +31,7 @@ allprojects {
 
     java {
         withSourcesJar()
-        toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+        toolchain.languageVersion.set(JavaLanguageVersion.of(25))
 
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
