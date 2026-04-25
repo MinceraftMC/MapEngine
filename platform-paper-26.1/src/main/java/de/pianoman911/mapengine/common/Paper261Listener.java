@@ -43,7 +43,6 @@ public final class Paper261Listener extends MessageToMessageDecoder<Packet<?>> {
             this.handleAnimation(passthroughMode);
         } else if (msg instanceof ServerboundAttackPacket(int entityId)) {
             passthroughMode = this.bridge.handleAttack(this.player, entityId);
-            this.handleAnimation(passthroughMode);
         }
         if (passthroughMode != null && passthroughMode != PassthroughMode.ALL) {
             return;
