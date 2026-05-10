@@ -7,11 +7,11 @@ import java.util.stream.Stream
 plugins {
     id("com.gradleup.shadow")
     id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
-    id("xyz.jpenilla.run-paper") version "2.3.1"
+    id("xyz.jpenilla.run-paper") version "3.0.2"
 }
 
 val reobfPlatforms = listOf("1.19.3", "1.19.4", "1.20", "1.20.2", "1.20.3")
-val mojangPlatforms = listOf("1.20.5", "1.21.2", "1.21.6", "1.21.11")
+val mojangPlatforms = listOf("1.20.5", "1.21.2", "1.21.6", "1.21.11", "26.1")
 val allPlatforms: List<String> = reobfPlatforms + mojangPlatforms
 
 dependencies {
@@ -74,7 +74,7 @@ tasks {
 
     runServer {
         runDirectory = rootProject.layout.projectDirectory.dir("run")
-        minecraftVersion("1.21.11")
+        minecraftVersion("26.1.1")
     }
 }
 
