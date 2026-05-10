@@ -49,27 +49,15 @@ The Stream source is 1920x1080@20 streamed with OBS.
 
 ### Javadoc
 
-A hosted version of the javadoc can be found [here](https://repo.minceraft.dev/javadoc/releases/de/pianoman911/mapengine-api/1.8.11).
+A hosted version of the javadoc can be found [here](https://repo.minceraft.dev/javadoc/releases/de/pianoman911/mapengine-api/1.8.12).
 
 ### Support
 
-| Server Version | Supported |
-|----------------|-----------|
-| Paper 1.21.11  | ✔️        |
-| Paper 1.21.10  | ✔️        |
-| Paper 1.21.9   | ✔️        |
-| Paper 1.21.8   | ✔️        |
-| Paper 1.21.7   | ✔️        |
-| Paper 1.21.6   | ✔️        |
-| Paper 1.21.5   | ✔️        |
-| Paper 1.21.4   | ✔️        |
-| Paper 1.21.3   | ✔️        |
-| Paper 1.21.2   | ✔️        |
-| Paper 1.21.1   | ✔️        |
-| Paper 1.21     | ✔️        |
-| Paper 1.20.x   | ✔️        |
-| Paper 1.19.4   | ✔️        |
-| Paper 1.19.3   | ✔️        |
+| Server Version | Supported           |
+|----------------|---------------------|
+| Paper 26.1.x   | ✔️                  |
+| Paper 1.21.x   | ✔️                  |
+| Paper 1.20.x   | ✔️                  |
 
 ## Usage
 
@@ -94,7 +82,7 @@ A hosted version of the javadoc can be found [here](https://repo.minceraft.dev/j
     <dependency>
         <groupId>de.pianoman911</groupId>
         <artifactId>mapengine-api</artifactId>
-        <version>1.8.11</version>
+        <version>1.8.12</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
@@ -115,7 +103,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'de.pianoman911:mapengine-api:1.8.11'
+    compileOnly 'de.pianoman911:mapengine-api:1.8.12'
 }
 ```
 
@@ -132,7 +120,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("de.pianoman911:mapengine-api:1.8.11")
+    compileOnly("de.pianoman911:mapengine-api:1.8.12")
 }
 ```
 

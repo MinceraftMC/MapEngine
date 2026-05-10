@@ -13,7 +13,7 @@ allprojects {
     apply(plugin = "maven-publish")
 
     group = "de.pianoman911"
-    version = "1.8.11"
+    version = "1.8.12"
 
     repositories {
         maven("https://repo.minceraft.dev/public/")
