@@ -40,9 +40,11 @@ public final class Paper261Listener extends MessageToMessageDecoder<Packet<?>> {
             passthroughMode = this.bridge.handleInteract(this.player, entityId, pos.x, pos.y, pos.z);
         } else if (msg instanceof ServerboundSwingPacket) {
             passthroughMode = this.bridge.handleSwing(this.player);
-            this.handleAnimation(passthroughMode);
         } else if (msg instanceof ServerboundAttackPacket(int entityId)) {
             passthroughMode = this.bridge.handleAttack(this.player, entityId);
+        }
+        if (passthroughMode == PassthroughMode.ONLY_ANIMATION){
+            this.handleAnimation();
         }
         if (passthroughMode != null && passthroughMode != PassthroughMode.ALL) {
             return;
@@ -51,10 +53,7 @@ public final class Paper261Listener extends MessageToMessageDecoder<Packet<?>> {
         out.add(msg);
     }
 
-    private void handleAnimation(PassthroughMode passthroughMode) {
-        if (passthroughMode != PassthroughMode.ONLY_ANIMATION) {
-            return;
-        }
+    private void handleAnimation() {
         ClientboundAnimatePacket animatePacket = new ClientboundAnimatePacket(((CraftPlayer) this.player).getHandle(),
                 ClientboundAnimatePacket.SWING_MAIN_HAND);
         this.player.getTrackedBy().forEach(player -> ((CraftPlayer) player).getHandle().connection.send(animatePacket));
